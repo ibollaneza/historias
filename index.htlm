@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Historias Personalizadas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Historias Personalizadas</h1>
+        
+        <div class="selector">
+            <label for="genre">Género:</label>
+            <select id="genre">
+                <option value="comedia">Comedia</option>
+                <option value="terror">Terror</option>
+                <option value="romance">Romance</option>
+            </select>
+        </div>
+        
+        <div class="selector">
+            <label for="tone">Tono:</label>
+            <select id="tone">
+                <option value="serio">Serio</option>
+                <option value="humoristico">Humorístico</option>
+            </select>
+        </div>
+
+        <div class="selector">
+            <label for="character">Personaje Principal:</label>
+            <input type="text" id="character" placeholder="Nombre del personaje">
+        </div>
+
+        <div class="selector">
+            <label for="setting">Escenario:</label>
+            <input type="text" id="setting" placeholder="Describe el escenario">
+        </div>
+
+        <button id="generateStory">Generar Historia</button>
+
+        <div id="storyOutput">
+            <h2>Tu Historia:</h2>
+            <p id="storyText"></p>
+        </div>
+
+        <button id="exportStory">Exportar Historia</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="download.js"></script> <!-- Librería para facilitar la descarga de archivos -->
+</body>
+</html>
